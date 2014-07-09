@@ -16,7 +16,7 @@
 #    gidstart => 5000,
 #    uidstart => 10000,
 #
-#    gclass   => [ 'posixGroup', 'inetOrgPerson' ],
+#    gclass   => 'posixGroup',
 #  }
 #
 # === Authors
@@ -46,7 +46,7 @@ class ldapscripts
 	$uidstart		= 10000,
 	$midstart		= 20000,
 
-	$gclass			= [ 'posixGroup' ],
+	$gclass			= "posixGroup",
 	$gdummymember		= undef,
 
 	$ushell			= undef,
