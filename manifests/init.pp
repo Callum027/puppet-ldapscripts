@@ -93,6 +93,9 @@ class ldapscripts
 		ensure	=> installed,
 	}
 
+	# Workaround for bugged local ldapscripts.conf with invalid
+	# UTF-8. Delete before we apply ours.
+	exec { '/bin/rm -f /etc/ldapscripts/ldapscripts.conf': } ->
 	file
 	{ "/etc/ldapscripts/ldapscripts.conf":
 		mode	=> 444,
