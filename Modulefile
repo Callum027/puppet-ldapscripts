@@ -1,0 +1,8 @@
+name    'Callum027-ldapscripts'
+version '0.1.0'
+source 'https://github.com/Callum027/puppet-ldapscripts'
+author 'Callum027'
+license 'Apache License, Version 2.0'
+summary 'Puppet ldapscripts configuration module'
+description 'Module for setting up the ldapscripts suite of LDAP user management tools.'
+project_page 'https://github.com/Callum027/puppet-ldapscripts'
